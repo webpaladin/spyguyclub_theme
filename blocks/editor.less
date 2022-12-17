@@ -1,0 +1,144 @@
+.block-editor-block-list__block .block-list-appender .block-editor-inserter__toggle.components-button.has-icon, .block-editor-block-list__block .block-list-appender .block-list-appender__toggle {
+	display: flex !important;
+	top: 23px;
+	position: relative;
+	margin-left: auto;
+}
+.block-editor-block-list__block .block-list-appender .block-editor-default-block-appender {
+	height: auto;
+}
+.block-editor-block-list__block .block-list-appender:only-child .block-editor-default-block-appender__content {
+	display: block;
+}
+
+
+.wp-block-spyguy-hero,
+.wp-block-spyguy-faq,
+.wp-block-spyguy-faqitem,
+.wp-block-spyguy-heropage,
+.wp-block-spyguy-catlist,
+.wp-block-spyguy-steeps,
+.wp-block-spyguy-steepsitem,
+.wp-block-spyguy-questions,
+.wp-block-spyguy-questionsitem,
+.wp-block-spyguy-howtostartsitem,
+.wp-block-spyguy-howtostart,
+.wp-block-spyguy-filter {
+	background: #ddd;
+	border: 1px solid #b9b9b9;
+	padding: 30px 15px 15px;
+	border-radius: 5px;
+	position: relative;
+	margin-bottom: 15px;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		font-size: 10px;
+	}
+	p, h1,h2,h3,h4,h5,h6 {
+		background: #fff;
+		padding: 5px;
+	}
+	video, img {
+		max-width: 300px;
+		height: auto;
+	}
+}
+
+
+.wp-block-spyguy-filter {
+	&::before {
+		content: 'Block "Filter block"';
+	}
+}
+
+.wp-block-spyguy-faq {
+	&::before {
+		content: 'Block "FAQ"';
+	}
+}
+
+.wp-block-spyguy-filter {
+	&::before {
+		content: 'Block "Faq item"';
+	}
+}
+
+.wp-block-spyguy-hero {
+	&::before {
+		content: 'Block "Hero Home page"';
+	}
+}
+.wp-block-spyguy-heropage {
+	&::before {
+		content: 'Block "Hero page"';
+	}
+}
+.wp-block-spyguy-catlist {
+	&::before {
+		content: 'Category list';
+	}
+	.cat-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		a.item {
+			display: block;
+			text-align: center;
+			margin: 0 10px;
+			&:hover {
+				text-decoration: none;
+			}
+			img {
+				flex: none;
+				width: 50px;
+				height: auto;
+				margin-bottom: 10px;
+			}
+			p {
+				color: #000000;
+				font-size: 12px;
+				font-family: 'Arial',Arial,sans-serif;
+				line-height: 1.55;
+				font-weight: 400;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.wp-block-spyguy-steeps {
+	&::before {
+		content: 'Block "Steeps"';
+	}
+}
+
+.wp-block-spyguy-steepsitem {
+	&::before {
+		content: 'Block "Steep"';
+	}
+}
+
+.wp-block-spyguy-questions {
+	&::before {
+		content: 'Block "Questions"';
+	}
+}
+.wp-block-spyguy-questionsitem {
+	&::before {
+		content: 'Block "Item"';
+	}
+}
+.wp-block-spyguy-howtostart {
+	&::before {
+		content: 'Block "How to start"';
+	}
+}
+.wp-block-spyguy-howtostartsitem {
+	&::before {
+		content: 'Block "Item"';
+	}
+}

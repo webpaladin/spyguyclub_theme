@@ -1,0 +1,179 @@
+.wp-block {
+    max-width: 1280px;
+}
+.table-container {
+    overflow-x: scroll;
+    padding-bottom: 30px;
+}
+
+table.soft-table {
+    margin-bottom: 30px;
+    border-collapse:collapse;
+    th {
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+    }
+    tbody {
+        tr {
+            min-height: 50px;
+            border-bottom: 1px solid #ccc;
+            td {
+                text-align: center;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                img {
+                    display: block;
+                }
+                &:first-child {
+                    text-align: center;
+                    font-weight: bold;
+                }
+                &:last-child {
+                    min-width: 150px;
+                }
+                input[name="simbol"] {
+                    width: 60px;
+                    text-align: center;
+                }
+                position: relative;
+                .attrs {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    button {
+                        flex: none;
+                        cursor: pointer;
+                        width: 20px;
+                        height: 20px;
+                        background: transparent; 
+                        border: 0;
+                        border-radius: 50%;
+                        &:hover {
+                            background: #fff;
+                        }
+                    }
+                }
+                .add_soft_img {
+                    cursor: pointer;
+                }
+                .select-device, .select-os {
+                    position: relative;
+                    .selected {
+                        padding: 0 8px;
+                        line-height: 2;
+                        min-height: 30px;
+                        box-shadow: 0 0 0 transparent;
+                        border-radius: 4px;
+                        border: 1px solid #8c8f94;
+                        background-color: #fff;
+                        color: #2c3338;
+                        margin: 0 1px;
+                        font-size: 14px;
+                        min-width: 200px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        p.placeholder {
+                            margin: 0;
+                            padding: 0;
+                            font-style: italic;
+                            color: #818181;
+                        }
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            background: #ccc;
+                            border-radius: 3px;
+                            margin: 2px;
+                            padding: 3px;
+                            line-height: 1;
+                            p {
+                                margin: 0;
+                                padding: 0;
+                            }
+                            .del {
+                                cursor: pointer;
+                                font-size: 16px;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                    ul.options {
+                        position: absolute;
+                        z-index: 3;
+                        background: #fff;
+                        min-width: 100%;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        display: none;
+                        margin: 0;
+                        li {
+                            text-align-last: left;
+                            padding: 0 3px;
+                            cursor: pointer;
+                            &.active, &:hover {
+                                background: #007cba;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &:hover > ul.options {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+button.add_soft {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+    background: #007CBA;
+    color: #fff;
+    height: 40px;
+    width: 145px;
+    border-right: 2px solid #005454;
+    border-bottom: 2px solid #005454;
+    &:active {
+        position: relative;
+        top: 2px;
+        left: 2px;
+        border-right: 0;
+        border-bottom: 0;
+    }
+}
+
+button.save_soft {
+    background: #3cad3c;
+    border: 0;
+    height: 28px;
+    width: 60px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 5px;
+    &:disabled {
+        background-color: #dfdfdf;
+        color: #939292;
+        cursor: default;
+    }
+}
+button.remove_soft {
+    background: #e95252;
+    border: 0;
+    height: 28px;
+    width: 60px;
+    cursor: pointer;
+    color: #fff;
+    margin: 0 5px;
+    &:disabled {
+        background-color: #dfdfdf;
+        color: #939292;
+        cursor: default;
+    }
+}
